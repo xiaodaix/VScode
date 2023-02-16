@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "GCC Compiler",
+			"command": "E:\\vscode\\mingw64\\bin\\gcc.exe",
+			"args": [
+				"-std=c++11",
+				"-fdiagnostics-color=always",
+				"-g",
+			    //"${file}\\*.c",
+				"${workspaceFolder}\\*.c",
+				"${workspaceFolder}\\*.h",
+				"-o",
+				// "${fileDirname}\\${fileBasenameNoExtension}.exe"
+				"${workspaceFolder}\\run\\main.exe",//调试程序的路径名称
+
+			],
+			"options": {
+				"cwd": "E:\\vscode\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "编译器: \"E:\\vscode\\mingw64\\bin\\gcc.exe\""
+		}
+	]
+}

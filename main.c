@@ -4,7 +4,7 @@
     #include "lib.h"
 
 int add = 1;
-int xiaoxiaodai = 2345;
+int xiaoxiaodai = 256;
 int main()
 {
         m_DATA_inti();
